@@ -49,6 +49,7 @@ public class Window extends javax.swing.JFrame {
         jRegPasswordFieldConfirmation = new javax.swing.JPasswordField();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jLabelRegStatus = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -65,7 +66,7 @@ public class Window extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(0, 153, 153));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 51)));
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 2, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 51));
         jLabel1.setText("LOGIN WINDOW");
 
@@ -74,16 +75,16 @@ public class Window extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(54, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66))
+                .addContainerGap(59, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(34, Short.MAX_VALUE)
+                .addContainerGap(36, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(37, 37, 37))
+                .addGap(35, 35, 35))
         );
 
         jLabel2.setText("Login:");
@@ -157,16 +158,16 @@ public class Window extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(22, Short.MAX_VALUE)
                 .addComponent(jLabel4)
-                .addGap(32, 32, 32))
+                .addGap(20, 20, 20))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(50, Short.MAX_VALUE)
+                .addContainerGap(48, Short.MAX_VALUE)
                 .addComponent(jLabel4)
-                .addGap(36, 36, 36))
+                .addGap(38, 38, 38))
         );
 
         jLabel5.setText("Chose Username");
@@ -177,9 +178,9 @@ public class Window extends javax.swing.JFrame {
 
         jRegLoginField.setText("ussername");
 
-        jRegPasswordField.setText("jRegPasswordField");
+        jRegPasswordField.setText("password");
 
-        jRegPasswordFieldConfirmation.setText("jPasswordField3");
+        jRegPasswordFieldConfirmation.setText("password");
 
         jButton3.setText("Register");
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -195,6 +196,8 @@ public class Window extends javax.swing.JFrame {
             }
         });
 
+        jLabelRegStatus.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
         javax.swing.GroupLayout jPanelRegisterLayout = new javax.swing.GroupLayout(jPanelRegister);
         jPanelRegister.setLayout(jPanelRegisterLayout);
         jPanelRegisterLayout.setHorizontalGroup(
@@ -203,6 +206,11 @@ public class Window extends javax.swing.JFrame {
             .addGroup(jPanelRegisterLayout.createSequentialGroup()
                 .addGroup(jPanelRegisterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelRegisterLayout.createSequentialGroup()
+                        .addGap(120, 120, 120)
+                        .addComponent(jButton3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton4))
+                    .addGroup(jPanelRegisterLayout.createSequentialGroup()
                         .addGap(45, 45, 45)
                         .addGroup(jPanelRegisterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel7)
@@ -210,15 +218,11 @@ public class Window extends javax.swing.JFrame {
                             .addComponent(jLabel5))
                         .addGap(18, 18, 18)
                         .addGroup(jPanelRegisterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jRegPasswordField, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
                             .addComponent(jRegPasswordFieldConfirmation)
-                            .addComponent(jRegPasswordField)
-                            .addComponent(jRegLoginField)))
-                    .addGroup(jPanelRegisterLayout.createSequentialGroup()
-                        .addGap(120, 120, 120)
-                        .addComponent(jButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton4)))
+                            .addComponent(jRegLoginField))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jLabelRegStatus, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanelRegisterLayout.setVerticalGroup(
             jPanelRegisterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -236,7 +240,9 @@ public class Window extends javax.swing.JFrame {
                 .addGroup(jPanelRegisterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(jRegPasswordFieldConfirmation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addComponent(jLabelRegStatus)
+                .addGap(16, 16, 16)
                 .addGroup(jPanelRegisterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton3)
                     .addComponent(jButton4))
@@ -266,24 +272,28 @@ public class Window extends javax.swing.JFrame {
         jPanelRegister.setVisible(true);
     }//GEN-LAST:event_jButton2MouseClicked
 
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+        jPanelRegister.setVisible(false);
+    }//GEN-LAST:event_formWindowActivated
+
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         jPanelLogin.setVisible(true);
         jPanelRegister.setVisible(false);
     }//GEN-LAST:event_jButton4MouseClicked
 
-    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-        jPanelRegister.setVisible(false);
-    }//GEN-LAST:event_formWindowActivated
-
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-        if(jRegPasswordField.getText().equals(jRegPasswordFieldConfirmation.getText()) && !(jRegPasswordField.getText().equals("")))
-            System.out.println("password match");
+        if(jRegPasswordField.getText().equals(jRegPasswordFieldConfirmation.getText()) && !(jRegPasswordField.getText().equals("")) 
+                &&!(jRegLoginField.getText().equals("")))
+            {
+            jLabelRegStatus.setText("Account registered");
+            }
         else
-                       
+            {
             jRegPasswordField.setText("");
             jRegPasswordFieldConfirmation.setText("");
-            System.out.println("password not match");
-            
+            jLabelRegStatus.setText("Password not match or empty");
+            }
+
     }//GEN-LAST:event_jButton3MouseClicked
 
     /**
@@ -333,6 +343,7 @@ public class Window extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabelRegStatus;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanelLogin;
